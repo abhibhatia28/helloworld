@@ -23,7 +23,7 @@ workflows:
    default:
         jobs:
             - print-hello
-            - print-world
+            - print-world:
                 requires: [print-hello]
   welcome:
     # Run the welcome/run job in its own container
